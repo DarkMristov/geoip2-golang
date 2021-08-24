@@ -199,6 +199,7 @@ type ISP struct {
 	AutonomousSystemOrganization string `maxminddb:"autonomous_system_organization"`
 	ISP                          string `maxminddb:"isp"`
 	Organization                 string `maxminddb:"organization"`
+	AutonomousSystemName         string `maxminddb:"autonomous_system_name"`
 }
 
 type databaseType int
