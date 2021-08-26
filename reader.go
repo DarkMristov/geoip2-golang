@@ -195,19 +195,22 @@ type Domain struct {
 
 // The ISP struct corresponds to the data in the GeoIP2 ISP database.
 type ISP struct {
-	AutonomousSystemNumber uint   `maxminddb:"autonomous_system_number"`
-	Organization           string `maxminddb:"as_org"`
-	AsName                 string `maxminddb:"as_name,omitempty"`
-	RegistrationDate       string `maxminddb:"registration_date,omitempty"`
-	UpdateDate             string `maxminddb:"update_date,omitempty"`
-	OrgId                  string `maxminddb:"organization_id,omitempty"`
-	Address                string `maxminddb:"address,omitempty"`
-	City                   string `maxminddb:"city,omitempty"`
-	CountryCode            string `maxminddb:"country_code,omitempty"`
-	Province               string `maxminddb:"province,omitempty"`
-	Domain                 string `maxminddb:"domain,omitempty"`
-	PhoneNumber            string `maxminddb:"phone_number,omitempty"`
-	Email                  string `maxminddb:"email,omitempty"`
+	AutonomousSystemNumber       uint   `maxminddb:"autonomous_system_number"`
+	AutonomousSystemOrganization string `maxminddb:"autonomous_system_organization"`
+	ISP                          string `maxminddb:"isp"`
+
+	Organization     string `maxminddb:"as_org"`
+	AsName           string `maxminddb:"as_name,omitempty"`
+	RegistrationDate string `maxminddb:"registration_date,omitempty"`
+	UpdateDate       string `maxminddb:"update_date,omitempty"`
+	OrgId            string `maxminddb:"organization_id,omitempty"`
+	Address          string `maxminddb:"address,omitempty"`
+	City             string `maxminddb:"city,omitempty"`
+	CountryCode      string `maxminddb:"country_code,omitempty"`
+	Province         string `maxminddb:"province,omitempty"`
+	Domain           string `maxminddb:"domain,omitempty"`
+	PhoneNumber      string `maxminddb:"phone_number,omitempty"`
+	Email            string `maxminddb:"email,omitempty"`
 }
 
 type databaseType int
