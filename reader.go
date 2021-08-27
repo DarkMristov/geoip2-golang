@@ -200,17 +200,17 @@ type ISP struct {
 	ISP                          string `maxminddb:"isp"`
 
 	Organization     string `maxminddb:"as_org"`
-	AsName           string `maxminddb:"as_name,omitempty"`
-	RegistrationDate string `maxminddb:"registration_date,omitempty"`
-	UpdateDate       string `maxminddb:"update_date,omitempty"`
-	OrgId            string `maxminddb:"organization_id,omitempty"`
-	Address          string `maxminddb:"address,omitempty"`
-	City             string `maxminddb:"city,omitempty"`
-	CountryCode      string `maxminddb:"country_code,omitempty"`
-	Province         string `maxminddb:"province,omitempty"`
-	Domain           string `maxminddb:"domain,omitempty"`
-	PhoneNumber      string `maxminddb:"phone_number,omitempty"`
-	Email            string `maxminddb:"email,omitempty"`
+	AsName           string `maxminddb:"as_name"`
+	RegistrationDate string `maxminddb:"registration_date"`
+	UpdateDate       string `maxminddb:"update_date"`
+	OrgId            string `maxminddb:"organization_id"`
+	Address          string `maxminddb:"address"`
+	City             string `maxminddb:"city"`
+	CountryCode      string `maxminddb:"country_code"`
+	Province         string `maxminddb:"province"`
+	Domain           string `maxminddb:"domain"`
+	PhoneNumber      string `maxminddb:"phone_number"`
+	Email            string `maxminddb:"email"`
 }
 
 type databaseType int
